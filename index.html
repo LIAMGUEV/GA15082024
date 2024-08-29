@@ -1,27 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
     <head>
         <title>Eduardo Guevara</title>
+        <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2"/>
         <meta charset="utf-8">
-        <meta name="viewport"  content="width= divice-width, inicial-scale=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="title" content="Aplicacion para conversion de unidades de temperatura"/>
         <meta name="description" content="se calculan las unidades kelvin, farenhaith y celcius"/>
         <meta name="theme-color" content="#000000" />
+        <link rel="stylesheet" href="css/converter.css"/>
     </head>
     <body>
-        <header>
-            DISPOSITIVOS MOVILES
-        </header>
+        <h1>Convertidor de temperatura</h1>
+        <form id="converter">
+            <label for="input-temp">Temperatura</label>
+            <input type="text" id="input-temp" name="input-temp" value="20" />
+            <label for="input-unit">De</label>
+            <select id="input-unit" name="input-unit">
+                <option value="C" selected>celcius</option>
+                <option value="F" selected>farenhaith</option>
+                <option value="K" selected>Kelvin</option>
+            </select>
+            <label for="output-unit">A</label>
+            <select id="output-unit" name="output-unit">
+                <option value="C" selected>celcius</option>
+                <option value="F" selected>farenhaith</option>
+                <option value="K" selected>Kelvin</option>
+            </select>
+            <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+
+        </form>
+        <script src="js/converter.js"></script>
+
+
         <nav>
-            MENÚ
         </nav>
         <section>
-            CONTENIDOS SEPARADOS
-            <article>ARTICULADO</article>
+            <article></article>
             <aside>
 
             </aside>
-            <footer>ETIQUETA FOOTER</footer>
+            <footer></footer>
         </section>
 
     </body>
