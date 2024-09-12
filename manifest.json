@@ -16,7 +16,7 @@
     ],
 	"screenshots": [
         {
-        "src": "./media/icon/icon512.png",
+        "src": "./media/screenshots/icon512.png",
         "sizes": "1600x800",
         "type": "image/png",
         "form_factor": "wide",
